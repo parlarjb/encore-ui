@@ -98,11 +98,11 @@ angular.module('demoApp', ['encore.ui', 'ngRoute'])
     });
 })
 .run(function ($rootScope, components, $window, $location, $anchorScroll, Environment, rxBreadcrumbsSvc, rxPageTitle) {
-    var baseGithubUrl = '//rackerlabs.github.io/encore-ui/';
+    var baseGithubUrl = '//parlarjb.github.io/encore-ui/';
     Environment.add({
         name: 'ghPages',
-        pattern: '//rackerlabs.github.io',
-        url: baseGithubUrl + '{{path}}'
+        pattern: '//parlarjb.github.io',
+        url: '//parlarjb.github.io/encore-ui/{{path}}'
     });
 
     if (Environment.envCheck('ghPages')) {
@@ -129,15 +129,15 @@ angular.module('demoApp', ['encore.ui', 'ngRoute'])
                             linkText: 'GitHub Repos',
                             children: [
                                 {
-                                    href: 'https://github.com/rackerlabs/encore-ui',
-                                    linkText: 'EncoreUI'
+                                    href: 'https://github.com/parlarjb/encore-ui',
+                                    linkText: 'Encore-UI'
                                 },
                                 {
-                                    href: 'https://github.com/rackerlabs/encore-ui-template',
+                                    href: 'https://github.com/parlarjb/encore-ui-template',
                                     linkText: 'App Template (Private Repo)'
                                 },
                                 {
-                                    href: 'https://github.com/rackerlabs/encore-ui-login',
+                                    href: 'https://github.com/parlarjb/encore-ui-login',
                                     linkText: 'Common Login (Private Repo)'
                                 }
                             ]

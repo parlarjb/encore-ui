@@ -12,7 +12,7 @@ directory:
 # Add only 2 domains, key will act as a label
 domains:
   local: "http://localhost:9001"
-  live: "http://rackerlabs.github.io/encore-ui"
+  live: "http://parlarjb.github.io/encore-ui"
 
 screen_widths:
   - 1024

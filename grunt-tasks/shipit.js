@@ -18,7 +18,7 @@ module.exports = function (grunt) {
             tasks.push('default');
 
             // push files to prod
-            tasks.push('cloudfiles:production');
+            // tasks.push('cloudfiles:production');
 
             // push rx-page-objects to npm
             tasks.push('rxPageObjects');

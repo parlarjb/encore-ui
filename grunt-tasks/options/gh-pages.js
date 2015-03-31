@@ -11,7 +11,7 @@ module.exports = {
             base: 'bower',
             branch: 'master',
             message: 'chore(bower): release v<%= pkg.version %>',
-            repo: 'https://github.com/rackerlabs/encore-ui-bower.git',
+            repo: 'https://github.com/parlarjb/encore-ui-bower.git',
             tag: '<%= pkg.version %>'
         },
         src: '**/*'

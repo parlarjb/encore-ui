@@ -10,7 +10,7 @@ var data = {
 
 var options = {
     hostname: 'api.github.com',
-    path: '/repos/rackerlabs/encore-ui/issues/' + prNumber + '/comments',
+    path: '/repos/parlarjb/encore-ui/issues/' + prNumber + '/comments',
     method: 'POST',
     headers: {
         'User-Agent': 'Encore-Wraith-Script',

@@ -49,7 +49,7 @@ module.exports = {
                 // The \(\.\( matches (./
                 // The (.*?) then grabs 'guides/roadmap.md'
                 // The final \) matches the closing round bracket for the markdown link
-                var githubPath = 'https://github.com/rackerlabs/encore-ui/blob/master/$1';
+                var githubPath = 'https://github.com/parlarjb/encore-ui/blob/master/$1';
                 content = content.replace(/\(\.\/(.*?)\)/g, '(' + githubPath + ')');
                 return markdown(content);
             }
