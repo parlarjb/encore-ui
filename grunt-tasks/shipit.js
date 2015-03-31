@@ -21,13 +21,13 @@ module.exports = function (grunt) {
             // tasks.push('cloudfiles:production');
 
             // push rx-page-objects to npm
-            tasks.push('rxPageObjects');
+            //tasks.push('rxPageObjects');
 
             // commit version increment
             tasks.push('bump-commit');
 
             // update gh-pages branch
-            tasks.push('gh-pages:ghPages');
+            //tasks.push('gh-pages:ghPages');
 
             // update bower repo
             tasks.push('bower');
