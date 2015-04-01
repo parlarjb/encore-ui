@@ -17,7 +17,8 @@ angular.module('encore.ui.configs', [])
 .constant('foobar', '/foobar')
 .constant('foobar2', '/v1.14.0')
 .constant('foobar3', '/v1.14.0')
-.constant('foobar999', '/v1.14.0')
+.constant('foobar3', '/v1.14.0')
+.constant('foobar999999', '/v1.14.0')
 .constant('feedbackApi', '/api/feedback')
 .provider('routesCdnPath', function () {
 
