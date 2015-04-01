@@ -1,7 +1,7 @@
 /*jshint node:true */
 module.exports = function (grunt) {
     grunt.registerTask('shipit', 'Ships code to prod', function (versionType) {
-        var validTypes = ['major', 'minor', 'patch'];
+        var validTypes = ['major', 'minor', 'patch', 'git'];
         var tasks = [];
 
         if (validTypes.indexOf(versionType) > -1) {
