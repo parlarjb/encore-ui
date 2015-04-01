@@ -1,14 +1,19 @@
 /* jshint node:true */
 'use strict';
 
-function loadConfig (path) {
+function loadConfig (path, grunt) {
     var glob = require('glob');
     var object = {};
     var key;
 
     glob.sync('*', { cwd: path }).forEach(function (option) {
         key = option.replace(/\.js$/,'');
-        object[key] = require(path + option);
+        var val = require(path + option);
+        if (typeof val === 'function') {
+            object[key] = val(grunt);
+        } else {
+            object[key] = val;
+        }
     });
 
     return object;
@@ -34,6 +39,6 @@ module.exports = function (grunt) {
         localConfig: localConfig
     };
 
-    grunt.util._.extend(config, loadConfig('./grunt-tasks/options/'));
+    grunt.util._.extend(config, loadConfig('./grunt-tasks/options/', grunt));
     grunt.initConfig(config);
 };
