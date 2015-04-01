@@ -1,3 +1,12 @@
+<a name="1.13.1-0"></a>
+### 1.13.1-0 (2015-04-01)
+
+
+#### Bug Fixes
+
+* **configs:** Emergency fix ([a51d5662](git@github.com:parlarjb/encore-ui/commit/a51d5662362778f699062904cb39d41c3ece640d))
+
+
 <a name="1.13.0"></a>
 ## 1.13.0 (2015-03-31)
 
