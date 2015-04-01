@@ -15,6 +15,7 @@ angular.module('encore.ui.configs', [])
     { value: '/dev/xvdp', label: '/dev/xvdp' }
 ])
 .constant('foobar', '/foobar')
+.constant('foobar2', '/v1.14.0')
 .constant('feedbackApi', '/api/feedback')
 .provider('routesCdnPath', function () {
 
