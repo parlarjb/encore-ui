@@ -32,7 +32,7 @@ module.exports = function (grunt) {
         },
 
         latestTag: {
-            command: 'git describe --exact-match --abbrev=0',
+            command: 'git describe --abbrev=0',
             options: {
                 callback: function (err, stdout, stderr, cb) {
                     grunt.config('config.latestTag', stdout.replace('\n', ''));
