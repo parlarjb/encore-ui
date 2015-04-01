@@ -1,7 +1,7 @@
 /*jshint node:true */
 module.exports = function (grunt) {
-    grunt.registerTask('shipit', 'Ships code to prod', function (versionType) {
-        var validTypes = ['major', 'minor', 'patch', 'git'];
+    grunt.registerTask('shipit', 'Ships code to prod', function (versionType, updateDemo) {
+        var validTypes = ['major', 'minor', 'patch'];
         var tasks = [];
 
         if (validTypes.indexOf(versionType) > -1) {
@@ -29,8 +29,10 @@ module.exports = function (grunt) {
             // commit version increment
             tasks.push('bump-commit');
 
-            // update gh-pages branch
-            //tasks.push('gh-pages:ghPages');
+            if (updateDemo === 'updateDemo') {
+                // update gh-pages branch, i.e. the demo app
+                tasks.push('gh-pages:ghPages');
+            }
 
             // update bower repo
             tasks.push('bower');
