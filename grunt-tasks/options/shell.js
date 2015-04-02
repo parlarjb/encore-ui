@@ -30,6 +30,16 @@ module.exports = function (grunt) {
                 }
             }
         },
+        
+        npmPublishHotFix: {
+            command: 'npm publish ./rx-page-objects --tag bugfix-<%= pkg.version %>',
+            options: {
+                stdout: true,
+                execOptions: {
+                    cwd: 'utils/'
+                }
+            }
+        },
 
         latestTag: {
             command: 'git describe --abbrev=0',
