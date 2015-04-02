@@ -1,3 +1,12 @@
+<a name="1.27.0"></a>
+## 1.27.0 (2015-04-02)
+
+
+#### Bug Fixes
+
+* **pageobjects:** fix ([5a7f5ce5](git@github.com:parlarjb/encore-ui/commit/5a7f5ce5a3a50eecb5c4dd1ae4cb14947b52a6e9))
+
+
 <a name="1.26.0"></a>
 ## 1.26.0 (2015-04-02)
 
