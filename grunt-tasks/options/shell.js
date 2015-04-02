@@ -22,7 +22,7 @@ module.exports = function (grunt) {
         },
 
         npmPublish: {
-            command: 'npm publish ./rx-page-objects',
+            command: 'npm publish ./rx-page-objects --tag <%= pkg.version %>',
             options: {
                 stdout: true,
                 execOptions: {

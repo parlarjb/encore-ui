@@ -23,11 +23,11 @@ module.exports = function (grunt) {
             // push files to prod
             tasks.push('cloudfiles:alpha');
 
-            // push rx-page-objects to npm
-            //tasks.push('rxPageObjects');
-
             // commit version increment
             tasks.push('bump-commit');
+            
+            // push rx-page-objects to npm
+            tasks.push('rxPageObjects');
 
             if (updateDemo === 'updateDemo') {
                 // update gh-pages branch, i.e. the demo app
