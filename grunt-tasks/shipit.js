@@ -21,7 +21,7 @@ module.exports = function (grunt) {
             tasks.push('default');
 
             // push files to prod
-            tasks.push('cloudfiles:alpha');
+            //tasks.push('cloudfiles:alpha');
 
             // commit version increment
             tasks.push('bump-commit');
