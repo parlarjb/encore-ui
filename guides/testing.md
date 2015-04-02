@@ -84,7 +84,7 @@ The file name for this page objects follows the `componentName.page.js` conventi
 
 On build, all page object files are concatanated and tarballed into the `dist` directory. They are then published either manually or via Travis. To use these page objects, developers should include the following dependency in their `package.json` file:
 
-    "rx-page-objects": "rx-page-objects-1.23.0-v1.18.0-1-g0c04c-d.0-v1.14.0-2-gd9ae-d.0.tgz"
+    "rx-page-objects": "rx-page-objects-1.23.1-v1.18.0-1-g0c04c-d.0-v1.14.0-2-gd9ae-d.0.tgz"
 
 Alternatively, they can install the file using this command:
 
