@@ -1,6 +1,6 @@
 /*jshint node:true */
 module.exports = function (grunt) {
-    grunt.registerTask('shipit', 'Ships code to prod', function (versionType, updateDemo) {
+    grunt.registerTask('shipit', 'Ships code to prod', function (versionType, arg) {
         var validTypes = ['major', 'minor', 'patch'];
         var tasks = [];
 
@@ -27,9 +27,13 @@ module.exports = function (grunt) {
             tasks.push('bump-commit');
             
             // push rx-page-objects to npm
-            tasks.push('rxPageObjects');
+            if (arg === 'bugfix') {
+                tasks.push('rxPageObjects:hotfix');
+            } else {
+                tasks.push('rxPageObjects');
+            }
 
-            if (updateDemo === 'updateDemo') {
+            if (arg === 'updateDemo') {
                 // update gh-pages branch, i.e. the demo app
                 tasks.push('gh-pages:ghPages');
             }
