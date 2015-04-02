@@ -1,3 +1,12 @@
+<a name="1.28.0"></a>
+## 1.28.0 (2015-04-02)
+
+
+#### Bug Fixes
+
+* **configs:** fix ([5cc6847c](git@github.com:parlarjb/encore-ui/commit/5cc6847c02d423dadf96050a482758d3b126ae25))
+
+
 <a name="1.27.0"></a>
 ## 1.27.0 (2015-04-02)
 
